@@ -1,0 +1,1 @@
+export const headerPhrase = "O Drops na Rede é um projeto da Universidade Federal de Campina Grande que visa o ensino de Física a alunos e professores por meio de atividades realizadas de forma virtual.";
