@@ -44,12 +44,22 @@ export const ProfessorContainer = styled.div`
     position: absolute;
     flex-direction: column;
     bottom: 0px;
+    transition: background-color 1s ease;
+
+    ${MessageView}:hover & {
+        background-color: blue;
+    }
 `
 
 export const SchoolContainer = styled.div`
     grid-area: school;
     width: 100%;
     height: 100%;
+    transition: background-color 1s ease;
+
+    ${MessageView}:hover & {
+        background-color: blue;
+    }
 `
 
 export const Introduction = styled.div`

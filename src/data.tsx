@@ -10,12 +10,12 @@ const data = [
     },
 
     {
-        path: "activities",
+        path: "/activities",
         element: <Activities/>
     },
 
     {
-        path: "schools",
+        path: "/schools",
         element: <Schools/>
     }
 ];
