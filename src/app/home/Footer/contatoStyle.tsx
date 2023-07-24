@@ -39,7 +39,7 @@ export const DropsImage = styled.img`
     object-fit: contain;
 
     @media (max-width: 500px) {
-        width: 200px%;
+        width: 200px;
         height: 200px;
         display: none;
     }    

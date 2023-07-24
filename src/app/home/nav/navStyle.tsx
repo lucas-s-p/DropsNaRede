@@ -43,3 +43,29 @@ export const NavImageDrops = styled.img`
     object-fit: contain;
     cursor: pointer;
 `
+
+export const ContainerDesktop = styled.div`
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (min-width: 0px) and (max-width: 550px) {
+        display: none;
+    }
+`
+
+export const ContainerMobile = styled.div`
+    width: 100%;
+    height: 50px;
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (min-width: 0px) and (max-width: 550px) {
+        display: flex;
+    }
+`

@@ -44,8 +44,10 @@ export default function Contact() {
         }
     };
 
+    const contactRef = useRef(null);
+
     return (
-        <ContactContainer>
+        <ContactContainer ref={contactRef}>
             <TextTitle>Envie a sua dúvida</TextTitle>
             <ContactBanner>
                 <ImageContainer>

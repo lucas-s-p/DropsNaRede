@@ -9,7 +9,8 @@ export const Container = styled.div`
     align-items: center;
 
     @media (min-width: 0px) and (max-width: 599px) {
-        height: 1350px;
+        height: 1200px;
+        background-color: blue;
     }
 `
 
@@ -35,7 +36,7 @@ export const ProjectBox = styled.div`
 
     @media (min-width: 0px) and (max-width: 599px) {
         flex-direction: column;
-        height: 1150px;
+        height: 2000px;
         justify-content: space-evenly;
     }
 
@@ -93,4 +94,9 @@ export const TextProject = styled.text`
     color: white;
     font-size: 2rem;
     font-weight: 500;
+
+    @media (min-width: 0px) and (max-width: 599px) {
+        text-align: center;
+        height: 150px;
+    }
 `

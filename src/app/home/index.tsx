@@ -1,4 +1,4 @@
-import { Component } from "react";
+import { useRef } from "react";
 import { Container } from "./homeStyle";
 import Header from "./header";
 import Nav from "./nav";
@@ -7,10 +7,13 @@ import Projects from "./ourProjects";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import Group from "./group";
+import { Provider } from "./Provider";
 
-export default class Home extends Component {
-    render() {
-        return (
+export default function Home() {
+    const scrollRef = useRef(null);
+
+    return (
+        <Provider.Provider value={{scrollRef}}>
             <Container>
                 <Nav/>
                 <Header/>
@@ -19,6 +22,6 @@ export default class Home extends Component {
                 <Contact/>
                 <Footer/>
             </Container>
-        )
-    }
+        </Provider.Provider>
+    )
 }

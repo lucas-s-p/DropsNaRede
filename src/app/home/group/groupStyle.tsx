@@ -91,39 +91,45 @@ export const Name = styled.text`
 `
 
 const slideUpAnimation = keyframes`
-  from {
-    transform: translateY(100%);
-  }
-  to {
-    transform: translateY(0);
-  }
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
 `;
 
 export const Modal = styled.div<{ isVisible: boolean }>`
-  position: absolute;
-  bottom: ${props => (props.isVisible ? "0" : "-340px")};
-  left: 0;
-  width: 160px;
-  height: 170px;
-  background-color: white;
-  color: #fff;
-  padding: 20px;
-  transition: bottom 0.3s;
-  animation: ${slideUpAnimation} 0.3s ease-in-out;
+    position: absolute;
+    bottom: ${props => (props.isVisible ? "0" : "-340px")};
+    left: 0;
+    width: 160px;
+    height: 170px;
+    background-color: white;
+    color: #fff;
+    padding: 20px;
+    transition: bottom 0.3s;
+    animation: ${slideUpAnimation} 0.3s ease-in-out;
   
-  @media(min-width: 820px) and (max-width: 1150px) {
-    width: 250px;
-  }
+    @media(min-width: 820px) and (max-width: 1150px) {
+        width: 246px;
+    }
 
-  @media(min-width: 450px) and (max-width: 670px) {
-    width: calc(50% - 20px);
-    height: 400px;
-  }
+    @media(min-width: 820px) and (max-width: 1150px) {
+        width: 246px;
+    }
 
-  @media(min-width: 0px) and (max-width: 449px) {
-    width: 90%;
-    height: 400px;
-  }
+    @media(min-width: 820px) and (max-width: 1150px) {
+        width: 246px;
+    }
+
+    @media(min-width: 450px) and (max-width: 670px) {
+        width: calc(50% - 20px);
+    }
+
+    @media(min-width: 0px) and (max-width: 449px) {
+        width: 90%;
+    }
 `;
 
 export const TitleModalContainer = styled.div`
@@ -134,35 +140,35 @@ export const TitleModalContainer = styled.div`
 `
 
 export const TitleModal = styled.text`
-  width: 100%;
-  font-size: 0.8rem;
-  color: blue;
-  color: blue;
+    width: 100%;
+    font-size: 0.8rem;
+    color: blue;
+    color: blue;
 `
 
 export const DescriptionModal = styled.text`
-  font-size: 0.8rem;
-  margin-top: 20px;
-  color: black;
+    font-size: 0.8rem;
+    margin-top: 20px;
+    color: black;
 `
 
 export const Image = styled.img`
-  width: 100%;
-  calc(100% - 50px);
-  position: absolute;
-  bottom: 0;
+    width: 100%;
+    calc(100% - 50px);
+    position: absolute;
+    bottom: 0;
 `
 
 export const Link = styled.text`
-  color: blue;
-  font-size: 0.8rem;
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  cursor: pointer;
-  font-style: italic;
+    color: blue;
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    cursor: pointer;
+    font-style: italic;
 
-  &:hover {
-    color: red;
-  }
+    &:hover {
+        color: red;
+    }
 `

@@ -30,6 +30,7 @@ export const MessageView = styled.div`
     }
 
     display: none;
+    position: relative;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "professor school";
@@ -39,6 +40,10 @@ export const ProfessorContainer = styled.div`
     grid-area: professor;
     width: 100%;
     height: 100%;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    bottom: 0px;
 `
 
 export const SchoolContainer = styled.div`
@@ -52,4 +57,26 @@ export const Introduction = styled.div`
     height: 60%;
     background-color: white;
     border-radius: 10px;
+`
+
+export const ResponseArea = styled.div`
+    width: 90%;
+    height: 80px;
+    display: flex;
+    margin-left: 2%;
+    flex-direction: column;
+`
+
+export const TextTitle = styled.div`
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    height: 40p;
+    flex-direction: column;
+    justify-content: center;
+`
+
+export const Input = styled.input`
+    width: 90%;
+    height: 40px;
 `
