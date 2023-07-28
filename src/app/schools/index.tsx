@@ -1,5 +1,5 @@
-import { useRef } from "react";
-import { Container, Input, Introduction, MessageContainer, MessageView, ProfessorContainer, ResponseArea, SchoolContainer, TextTitle } from "./schoolsStyle";
+import { useEffect, useRef } from "react";
+import { Container, Input, Introduction, MessageContainer, MessageView, ProfessorContainer, ResponseArea, SchoolContainer, TextTitle, IndroductionButton, MessageGeral, TitleContact, TitleContactMessage } from "./schoolsStyle";
 import Nav from "../home/nav";
 
 export default function Schools() {
@@ -11,6 +11,9 @@ export default function Schools() {
         if (introductionRef.current && messageRef.current) {
             introductionRef.current.style.display = "none";
             messageRef.current.style.display = "grid";
+            
+            messageRef.current.style.width = "90%";
+            messageRef.current.style.height = "80%";    
         }
     }
 
@@ -18,29 +21,37 @@ export default function Schools() {
         <Container>
             <Nav></Nav>
             <MessageContainer>
-                <Introduction ref={introductionRef} onClick={() => changeMessage()}>    
+                <Introduction ref={introductionRef}>    
+                    <IndroductionButton onClick={() => changeMessage()}>Solicitar</IndroductionButton>
                 </Introduction>
                 <MessageView ref={messageRef}>
                     <ProfessorContainer>
+                        <TitleContact>Preencha as informações (obrigatório):</TitleContact>
                         <ResponseArea>
-                            <TextTitle>Nome da Escola</TextTitle>
-                            <Input></Input>
+                            <TextTitle>Nome do responsável</TextTitle>
+                            <Input type={"name"} placeholder="Digite o seu nome"></Input>
                         </ResponseArea>
                         <ResponseArea>
                             <TextTitle>Email para contato</TextTitle>
-                            <Input type={"email"}></Input>
+                            <Input type={"email"} placeholder="Digite o seu email"></Input>
                         </ResponseArea>
                         <ResponseArea>
                             <TextTitle>Número de telefone</TextTitle>
-                            <Input type={"tel"}></Input>
+                            <Input type={"tel"} placeholder="Digite o seu telefone"></Input>
                         </ResponseArea>
                         <ResponseArea>
-                            <TextTitle>Nome do responsável</TextTitle>
-                            <Input></Input>
+                            <TextTitle>Nome da Escola</TextTitle>
+                            <Input placeholder="Digite o nome da escola"></Input>
+                        </ResponseArea>
+                        <ResponseArea>
+                            <TextTitle>Cidade</TextTitle>
+                            <Input placeholder="Cidade - UF"></Input>
                         </ResponseArea>
                     </ProfessorContainer>
                     <SchoolContainer>
-
+                        <TitleContactMessage>Escreva a sua mensagem:</TitleContactMessage>
+                        <MessageGeral placeholder="Escreva a sua mensagem..."></MessageGeral>
+                        <IndroductionButton onClick={() => changeMessage()}>Enviar solicitação</IndroductionButton>
                     </SchoolContainer>
                 </MessageView>
             </MessageContainer>
