@@ -1,21 +1,22 @@
 import { createBrowserRouter } from "react-router-dom";
-import Home from "./app/home";
-import Activities from "./app/activities";
-import Schools from "./app/schools";
+import Home from "./app/home/index";
+import Activities from "./app/activities/index";
+import Schools from "./app/schools/index";
 
 const data = [
     {
         path: "/",
-        element: <Home/>
+        element: <Home/>,
+        errorElement: <></>
     },
 
     {
-        path: "/activities",
+        path: "activities",
         element: <Activities/>
     },
 
     {
-        path: "/schools",
+        path: "schools",
         element: <Schools/>
     }
 ];

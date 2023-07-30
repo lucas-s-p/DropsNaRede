@@ -2,7 +2,6 @@ import { useRef } from "react";
 import { Container } from "./homeStyle";
 import Header from "./header";
 import Nav from "./nav";
-import React from "react";
 import Projects from "./ourProjects";
 import Contact from "./Contact";
 import Footer from "./Footer";

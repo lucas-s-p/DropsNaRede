@@ -8,6 +8,10 @@ export const NavContainer = styled.nav`
     background-color: white;
     padding: 0px 20px 0px 20px;
     justify-content: space-between;
+
+    @media (min-width: 0px) and (max-width: 680px) {
+        padding: 0px 0px 0px 0px;
+    }
 `
 
 export const PageDrops = styled.div`
@@ -23,6 +27,11 @@ export const PageDrops = styled.div`
     &:hover {
         color: #2C79DC;
     }
+
+    @media (min-width: 681px) and (max-width: 930px) {
+        font-size: 0.7rem;
+    }
+
 `
 
 export const NavPages = styled.div`
@@ -32,13 +41,17 @@ export const NavPages = styled.div`
     flex-direction: row;
     justify-content: space-between;
 
-    @media (min-width: 0px) and (max-width: 550px) {
+    @media (min-width: 551px) and (max-width: 930px) {
+        width: calc(100% - 250px);
+    }
+
+    @media (min-width: 0px) and (max-width: 680px) {
         display: none;
     }
 `
 
 export const NavImageDrops = styled.img`
-    width: 140px;
+    width: 70px;
     height: 100%;
     object-fit: contain;
     cursor: pointer;

@@ -1,5 +1,18 @@
 import React, { useState } from "react";
-import { CardGroup, Container, DescriptionModal, GroupContainer, Modal, Name, Image, NameContainer, TitleGroup, TitleModal, TitleModalContainer, Link } from "./groupStyle";
+import { 
+    CardGroup, 
+    Container, 
+    DescriptionModal, 
+    GroupContainer, 
+    Modal, 
+    Name, 
+    Image, 
+    NameContainer, 
+    TitleGroup, 
+    TitleModal, 
+    TitleModalContainer, 
+    Link 
+} from "./groupStyle";
 import { group } from "./data";
 
 const Grupo: React.FC = () => {

@@ -1,6 +1,5 @@
 import { Component } from "react";
 import { Container, NavProject, Project, ProjectBox, ProjectImage, TextProject } from "./projectStyle";
-import React from "react";
 import { ourProjects } from "./data";
 
 export default class Projects extends Component {

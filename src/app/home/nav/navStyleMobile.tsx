@@ -14,6 +14,7 @@ export const DrawerContainer = styled.div<DrawerContainerProps>`
     box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.2);
     transform: ${({ isOpen }) => (isOpen ? "translateX(0)" : "translateX(-100%)")};
     transition: transform 0.3s ease-in-out;
+    z-index: 2;
 `;
 
 export const DrawerContent = styled.div`

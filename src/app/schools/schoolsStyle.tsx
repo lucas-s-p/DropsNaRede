@@ -30,7 +30,7 @@ export const MessageView = styled.div`
     grid-template-areas: "professor school";
 
     @media (min-width: 0px) and (max-width: 800px) {
-        grid-template-rows: 400px 500px;
+        grid-template-rows: 500px 500px;
         grid-template-columns: 1fr;
         grid-template-areas: "professor" "school";
         overflow-y: scroll;
@@ -58,6 +58,9 @@ export const SchoolContainer = styled.div`
     height: 100%;
     transition: background-color 1s ease;
     position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 
     ${MessageView}:hover & {
         background-color: blue;
@@ -70,9 +73,15 @@ export const Introduction = styled.div`
     background-color: white;
     border-radius: 10px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     position: relative;
-    justify-content: center;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+
+    @media (min-width: 0px) and (max-width: 800px) {
+        width: 90%;
+    }
 `
 
 export const ResponseArea = styled.div`
@@ -99,6 +108,7 @@ export const TextTitle = styled.div`
 export const Input = styled.input`
     width: 90%;
     height: 40px;
+
     @media (min-width: 0px) and (max-width: 800px) {
         width: 100%;
     }
@@ -112,13 +122,13 @@ export const IndroductionButton = styled.button`
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
     bottom: 10px;
     color: white;
     font-weight: bold;
     border: 2px solid black;
     cursor: pointer;
     text-transform: uppercase;
+    margin-top: 20px;
 
     &:hover {
         color: blue;
@@ -129,17 +139,20 @@ export const IndroductionButton = styled.button`
 export const MessageGeral = styled.textarea`
     width: 94%;
     height: 60%;
-    position: absolute;
-    top: 18%;
+    margin-top: 16px;
     min-width: 94%;
     min-height: 60%;
     max-width: 94%;
     max-height: 60%;
+
+    @media (min-width: 800px) and (max-width: 1000px) {
+        margin-top: 44px;
+    }
 `
 
 export const TitleContact = styled.h2`
     margin-left: 2%;
-
+    
     ${MessageView}:hover & {
         color: white;
     }
@@ -149,4 +162,11 @@ export const TitleContactMessage = styled.h2`
     ${MessageView}:hover & {
         color: white;
     }
+`
+
+export const TitleContainer = styled.div`
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 `

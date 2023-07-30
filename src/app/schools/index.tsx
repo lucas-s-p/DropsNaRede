@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { Container, Input, Introduction, MessageContainer, MessageView, ProfessorContainer, ResponseArea, SchoolContainer, TextTitle, IndroductionButton, MessageGeral, TitleContact, TitleContactMessage } from "./schoolsStyle";
+import { Container, Input, Introduction, MessageContainer, MessageView, ProfessorContainer, ResponseArea, SchoolContainer, TextTitle, IndroductionButton, MessageGeral, TitleContact, TitleContactMessage, TitleContainer } from "./schoolsStyle";
 import Nav from "../home/nav";
 
 export default function Schools() {
@@ -49,7 +49,9 @@ export default function Schools() {
                         </ResponseArea>
                     </ProfessorContainer>
                     <SchoolContainer>
-                        <TitleContactMessage>Escreva a sua mensagem:</TitleContactMessage>
+                        <TitleContainer>
+                            <TitleContactMessage>Escreva a sua mensagem:</TitleContactMessage>
+                        </TitleContainer>
                         <MessageGeral placeholder="Escreva a sua mensagem..."></MessageGeral>
                         <IndroductionButton onClick={() => changeMessage()}>Enviar solicitação</IndroductionButton>
                     </SchoolContainer>

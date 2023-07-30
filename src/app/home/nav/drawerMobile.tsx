@@ -1,4 +1,13 @@
-import { DrawerContainer, DrawerContent, ButtonClose, ButtonContainer, ButtonNavigation, ContainerDrawer, ImageButtonClose, TextButtonDrawer } from "./navStyleMobile";
+import { 
+    DrawerContainer, 
+    DrawerContent, 
+    ButtonClose, 
+    ButtonContainer, 
+    ButtonNavigation, 
+    ContainerDrawer, 
+    ImageButtonClose, 
+    TextButtonDrawer 
+} from "./navStyleMobile";
 import buttonCloseImage from "../../assets/buttonDrawer.png";
 
 export default function DrawerMobile(props: any) {
@@ -18,7 +27,7 @@ export default function DrawerMobile(props: any) {
                     </ButtonContainer>
                     <ButtonContainer>
                         <ButtonNavigation onClick={() => props.redirect("/")}>
-                            <TextButtonDrawer>Pagina Inicial</TextButtonDrawer>
+                            <TextButtonDrawer>Drops na Rede</TextButtonDrawer>
                         </ButtonNavigation>
                     </ButtonContainer>
                     <ButtonContainer>
@@ -29,6 +38,16 @@ export default function DrawerMobile(props: any) {
                     <ButtonContainer>
                         <ButtonNavigation onClick={() => props.navigateTo("https://drops-coronadrops.web.app")}>
                             <TextButtonDrawer>Corona Drops</TextButtonDrawer>
+                        </ButtonNavigation>
+                    </ButtonContainer>
+                    <ButtonContainer>
+                        <ButtonNavigation onClick={() => props.redirect("/activities")}>
+                            <TextButtonDrawer>Atividades</TextButtonDrawer>
+                        </ButtonNavigation>
+                    </ButtonContainer>
+                    <ButtonContainer>
+                        <ButtonNavigation onClick={() => props.redirect("/schools")}>
+                            <TextButtonDrawer>Drops nas Escolas</TextButtonDrawer>
                         </ButtonNavigation>
                     </ButtonContainer>
                     <ButtonContainer onClick={() => eventScroll()}>

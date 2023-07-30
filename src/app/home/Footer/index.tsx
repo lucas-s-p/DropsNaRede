@@ -1,6 +1,21 @@
-import { Contact, CopyRightDropsTextF2, CopyRightDropsTextF3, Footer1, Footer2, Footer3, FooterTitle, RedeSocialTextFooter, FooterTitleContainer, Separator, DropsImage, TextContact, ContactContainer, ContainerFooterContact } from "./contatoStyle";
+import { 
+    Contact, 
+    CopyRightDropsTextF2, 
+    CopyRightDropsTextF3, 
+    Footer1, 
+    Footer2, 
+    Footer3, 
+    FooterTitle, 
+    RedeSocialTextFooter, 
+    FooterTitleContainer, 
+    Separator, 
+    DropsImage, 
+    TextContact, 
+    ContactContainer, 
+    ContainerFooterContact 
+} from "./contatoStyle";
 import dropsimage from "../../assets/drops.jpg";
-import React, { Component } from "react";
+import { Component } from "react";
 
 export default class Footer extends Component {
 
