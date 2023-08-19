@@ -34,9 +34,10 @@ export default class Footer extends Component {
                         <FooterTitle>Contato</FooterTitle>
                         <ContainerFooterContact>
                             <TextContact>Email: drops@ufcg.edu.br</TextContact>
-                            <TextContact>Telefone: +55 (83)99999-9999</TextContact>
+                            <TextContact>Telefone: +55 (83) 2101-1195</TextContact>
+                            <TextContact>Endereço: Av. Aprígio Veloso, 882 - Bloco CY - Bodocongó</TextContact>
                             <TextContact>Cidade: Campina Grande - PB</TextContact>
-                            <TextContact>CEP: 99999-999</TextContact>
+                            <TextContact>CEP: 58.429-900</TextContact>
                         </ContainerFooterContact>
                     </ContactContainer>
                     <CopyRightDropsTextF2>Copyright © 2023 DROPS - UFCG</CopyRightDropsTextF2>
@@ -46,8 +47,7 @@ export default class Footer extends Component {
                         <FooterTitle>Nossas Redes</FooterTitle>
                     </FooterTitleContainer>
                     <Separator></Separator>
-                    <RedeSocialTextFooter onClick={() => this.navigateTo("https://www.instagram.com")}>Instagram</RedeSocialTextFooter>
-                    <RedeSocialTextFooter onClick={() => this.navigateTo("https://www.facebook.com")}>Facebook</RedeSocialTextFooter>
+                    <RedeSocialTextFooter onClick={() => this.navigateTo("https://www.instagram.com/dropsdefisica")}>Instagram</RedeSocialTextFooter>
                     <CopyRightDropsTextF3>Copyright © 2023 DROPS - UFCG</CopyRightDropsTextF3>
                 </Footer3>
             </Contact>

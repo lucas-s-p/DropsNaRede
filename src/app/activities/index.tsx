@@ -9,7 +9,6 @@ export default function Activities() {
 
     return (
        <Container>
-            <Nav></Nav>
             <ActivityContainer>
                 <NavBarVertical>
                     {data.map((props, index) => 

@@ -1,11 +1,17 @@
-import { useEffect, useRef } from "react";
-import { Container, Input, Introduction, MessageContainer, MessageView, ProfessorContainer, ResponseArea, SchoolContainer, TextTitle, IndroductionButton, MessageGeral, TitleContact, TitleContactMessage, TitleContainer } from "./schoolsStyle";
+import { useEffect, useRef, useState } from "react";
+import { Container, Input, Introduction, MessageContainer, MessageView, ProfessorContainer, ResponseArea, SchoolContainer, TextTitle, IndroductionButton, MessageGeral, TitleContact, TitleContactMessage, TitleContainer, MessageIntro, Message } from "./schoolsStyle";
 import Nav from "../home/nav";
+import { dataPhraseMessage } from "./data";
 
 export default function Schools() {
 
     const introductionRef = useRef<HTMLDivElement>(null);
     const messageRef = useRef<HTMLDivElement>(null);
+    const [click, setClick] = useState(false);
+
+    const onClickSend = () => {
+        setClick(true);
+    }
 
     const changeMessage = () => {
         if (introductionRef.current && messageRef.current) {
@@ -13,15 +19,17 @@ export default function Schools() {
             messageRef.current.style.display = "grid";
             
             messageRef.current.style.width = "90%";
-            messageRef.current.style.height = "80%";    
+            messageRef.current.style.height = "80%";
         }
     }
 
     return (
         <Container>
-            <Nav></Nav>
             <MessageContainer>
-                <Introduction ref={introductionRef}>    
+                <Introduction ref={introductionRef}>
+                    <MessageIntro>
+                        <Message>{dataPhraseMessage}</Message>
+                    </MessageIntro>
                     <IndroductionButton onClick={() => changeMessage()}>Solicitar</IndroductionButton>
                 </Introduction>
                 <MessageView ref={messageRef}>
@@ -53,7 +61,7 @@ export default function Schools() {
                             <TitleContactMessage>Escreva a sua mensagem:</TitleContactMessage>
                         </TitleContainer>
                         <MessageGeral placeholder="Escreva a sua mensagem..."></MessageGeral>
-                        <IndroductionButton onClick={() => changeMessage()}>Enviar solicitação</IndroductionButton>
+                        <IndroductionButton onClick={() => onClickSend()}>{click ? "Enviado":"Enviar solicitação"}</IndroductionButton>
                     </SchoolContainer>
                 </MessageView>
             </MessageContainer>

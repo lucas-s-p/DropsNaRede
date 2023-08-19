@@ -14,7 +14,6 @@ export default function Home() {
     return (
         <Provider.Provider value={{scrollRef}}>
             <Container>
-                <Nav/>
                 <Header/>
                 <Projects/>
                 <Group/>

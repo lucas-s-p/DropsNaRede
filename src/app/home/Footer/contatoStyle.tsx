@@ -4,6 +4,7 @@ export const Contact = styled.nav`
     min-height: 200px;
     background-color: white;
     margin-top: 50px;
+    overflow-y: hidden;
 
     display: grid;
     grid-template-rows: 1fr;

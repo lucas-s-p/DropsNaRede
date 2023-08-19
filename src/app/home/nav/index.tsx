@@ -37,10 +37,10 @@ export default function Nav() {
                 <NavImageDrops onClick={() => redirect("/")} src={imageDrops}></NavImageDrops>
                 <NavPages>
                     <PageDrops onClick={() => redirect("/")}>Na Rede</PageDrops>
-                    <PageDrops onClick={() => navigateTo("https://dropsnomundodalua.netlify.app")}>No Mundo da Lua</PageDrops>
-                    <PageDrops onClick={() => navigateTo("https://drops-coronadrops.web.app")}>Corona Drops</PageDrops>
-                    <PageDrops onClick={() => redirect("/activities")}>Atividades</PageDrops>
+                    <PageDrops onClick={() => redirect("/nml")}>No Mundo da Lua</PageDrops>
+                    <PageDrops onClick={() => redirect("/coronadrops")}>Corona Drops</PageDrops>
                     <PageDrops onClick={() => redirect("/schools")}>Nas Escolas</PageDrops>
+                    <PageDrops onClick={() => redirect("/activities")}>Atividades</PageDrops>
                 </NavPages>
             </ContainerDesktop>
             <ContainerMobile>

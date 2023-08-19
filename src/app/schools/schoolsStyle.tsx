@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import school from "../assets/school.jpg";
 
 export const Container = styled.nav`
     min-height: 100vh;
@@ -77,7 +78,7 @@ export const Introduction = styled.div`
     position: relative;
     align-items: center;
     justify-content: flex-end;
-    padding-bottom: 20px;
+    background-size: cover;
 
     @media (min-width: 0px) and (max-width: 800px) {
         width: 90%;
@@ -129,6 +130,7 @@ export const IndroductionButton = styled.button`
     cursor: pointer;
     text-transform: uppercase;
     margin-top: 20px;
+    position: absolute;
 
     &:hover {
         color: blue;
@@ -152,6 +154,7 @@ export const MessageGeral = styled.textarea`
 
 export const TitleContact = styled.h2`
     margin-left: 2%;
+    overflow-y: hidden;
     
     ${MessageView}:hover & {
         color: white;
@@ -169,4 +172,26 @@ export const TitleContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+`
+
+export const MessageIntro = styled.div`
+    width: 90%;
+    height: 100%;
+    padding: 20px;
+    overflow: hidden;
+`
+
+export const Message = styled.text`
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: purple;
+    white-space: pre-wrap;
+    
+    @media (min-width: 0px) and (max-width: 430px) {
+        font-size: 1rem;
+    }
+
+    @media (min-width: 431px) and(max-width: 550px) {
+        font-size: 1.2rem;
+    }
 `
