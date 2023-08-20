@@ -48,6 +48,7 @@ export default class Footer extends Component {
                     </FooterTitleContainer>
                     <Separator></Separator>
                     <RedeSocialTextFooter onClick={() => this.navigateTo("https://www.instagram.com/dropsdefisica")}>Instagram</RedeSocialTextFooter>
+                    <RedeSocialTextFooter onClick={() => this.navigateTo("https://www.youtube.com/channel/UCE9sJIB8LmaTE5Kua58WLsQ")}>YouTube</RedeSocialTextFooter>
                     <CopyRightDropsTextF3>Copyright © 2023 DROPS - UFCG</CopyRightDropsTextF3>
                 </Footer3>
             </Contact>

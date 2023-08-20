@@ -4,7 +4,7 @@ import { Activity, ActivityContainer, BottomBar, Container, NavBarVertical, Intr
 import { data } from "./data";
 import { ActivityInterface } from "./activityInterface";
 
-export default function Activities() {
+export default function Activitie() {
     const [activity, setActivity] = useState<ActivityInterface>();
 
     return (

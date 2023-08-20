@@ -12,7 +12,7 @@ export const Contact = styled.nav`
     grid-template-areas: 'footer1 footer2 footer3';
 
     @media (max-width: 500px) {
-        grid-template-rows: 1fr 100px;
+        grid-template-rows: 1fr 120px;
         grid-template-columns: 1fr;
         grid-template-areas: 'footer2' 'footer3';
     }
