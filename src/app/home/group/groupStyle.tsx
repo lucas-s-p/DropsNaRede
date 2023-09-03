@@ -150,6 +150,7 @@ export const DescriptionModal = styled.text`
     font-size: 0.8rem;
     margin-top: 20px;
     color: black;
+    white-space: pre-wrap;
 `
 
 export const Image = styled.img`

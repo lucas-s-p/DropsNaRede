@@ -30,7 +30,7 @@ export default function Schools() {
                     <MessageIntro>
                         <Message>{dataPhraseMessage}</Message>
                     </MessageIntro>
-                    <IndroductionButton onClick={() => changeMessage()}>Solicitar</IndroductionButton>
+                    <IndroductionButton onClick={() => changeMessage()}>Solicitar visita</IndroductionButton>
                 </Introduction>
                 <MessageView ref={messageRef}>
                     <ProfessorContainer>

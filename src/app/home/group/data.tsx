@@ -7,10 +7,10 @@ export const group = [
     {name: "Lucas Pereira", image: "", work: "Dev. BackEnd", description: "Descrição do aluno", link: "https://github.com/lucas-s-p"},
     {name: "Jéssica", image: "", work: "Colaboradora", description: "Descrição do aluno", link: ""},
     {name: "Fabiana Dolores", image: "", work: "Redatora", description: "Descrição do aluno", link: ""},
-    {name: "Efigênio", image: "", work: "", description: "", link: ""},
-    {name: "Gilberto", image: "", work: "", description: "", link: ""},
-    {name: "Matheus", image: "", work: "", description: "", link: ""},
-    {name: "Ana", image: "", work: "", description: "", link: ""},
-    {name: "Gabriela", image: "", work: "", description: "", link: ""},
-    {name: "Lucas", image: "", work: "", description: "", link: ""}
+    {name: "Efigênio", image: "", work: "Secretário", description: "", link: ""},
+    {name: "Gilberto", image: "", work: "Colaborador", description: "", link: ""},
+    {name: "Matheus", image: "", work: "Colaborador", description: "", link: ""},
+    {name: "Ana", image: "", work: "Colaboradora", description: "", link: ""},
+    {name: "Gabriela", image: "", work: "Colaboradora", description: "", link: ""},
+    {name: "Lucas", image: "", work: "Participante", description: "", link: ""}
 ];

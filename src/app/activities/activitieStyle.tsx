@@ -1,5 +1,5 @@
 import styled from "styled-components";
 
 export const Container = styled.nav`
-    min-height: 100vh;
+    height: calc(100vh - 50px);
 `

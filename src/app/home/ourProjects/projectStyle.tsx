@@ -62,7 +62,8 @@ export const Project = styled.div`
     width: 32%;
     height: 310px;
     cursor: pointer;
-    
+    overflow-y: hidden;
+        
     &:hover {
         width: calc(32% +10px);
         height: 320px;

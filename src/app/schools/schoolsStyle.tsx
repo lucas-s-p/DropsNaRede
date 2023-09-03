@@ -2,7 +2,7 @@ import styled from "styled-components";
 import school from "../assets/school.jpg";
 
 export const Container = styled.nav`
-    min-height: 100vh;
+    height: calc(100vh - 50px);
     background-color: white;
 `
 
