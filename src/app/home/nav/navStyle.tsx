@@ -35,7 +35,7 @@ export const PageDrops = styled.div`
 `
 
 export const NavPages = styled.div`
-    width: 60%;
+    width: 70%;
     height: 100%;
     display: flex;
     flex-direction: row;

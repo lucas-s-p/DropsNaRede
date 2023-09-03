@@ -41,6 +41,7 @@ export default function Nav() {
                     <PageDrops onClick={() => redirect("/coronadrops")}>Corona Drops</PageDrops>
                     <PageDrops onClick={() => redirect("/schools")}>Nas Escolas</PageDrops>
                     <PageDrops onClick={() => redirect("/activities")}>Atividades</PageDrops>
+                    <PageDrops onClick={() => redirect("/curiosities")}>Curiosidades</PageDrops>
                 </NavPages>
             </ContainerDesktop>
             <ContainerMobile>

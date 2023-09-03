@@ -6,7 +6,7 @@ interface Props {
 }
 
 export default function Curiosity(props: Props) {
-    const [mouse, setMouse] = useState<Boolean>(false);
+    const [mouse, setMouse] = useState<Boolean>(true);
 
     return (
         <PostContainer image={props.image} onMouseEnter={() => setMouse(!mouse)} onMouseLeave={() => setMouse(!mouse)}>
