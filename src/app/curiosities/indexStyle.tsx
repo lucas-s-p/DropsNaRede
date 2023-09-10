@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 export const Container = styled.header`
     width: 100vw;
-    height: 100vh;
     display: flex;
+    flex-direction: column;
 `
 
 export const CuriositiesTextDestaque = styled.text`
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 2rem;
     width: 100%;
     height: 70px;
     display: flex;
@@ -20,4 +20,8 @@ export const Destaques = styled.div`
     flex-direction: column;
     height: 500px;
     width: 100vw;
+
+    @media (max-width: 1149px) {
+        display: none;
+    }
 `

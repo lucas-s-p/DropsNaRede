@@ -8,7 +8,7 @@ export default function CuriositiesDesataque() {
 
     return (
         <Container>
-            {data.map(({title, image, about, link, description}) => 
+            {data.slice(0,5).map(({title, image, about, link, description}) => 
                 <Curiosity title={title} image={image} about={about} link={link} description={description}/>
             )}
         </Container>

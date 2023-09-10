@@ -47,10 +47,6 @@ export const ProfessorContainer = styled.div`
     flex-direction: column;
     bottom: 0px;
     transition: background-color 1s ease;
-
-    ${MessageView}:hover & {
-        background-color: blue;
-    }
 `
 
 export const SchoolContainer = styled.div`
@@ -62,10 +58,6 @@ export const SchoolContainer = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
-
-    ${MessageView}:hover & {
-        background-color: blue;
-    }
 `
 
 export const Introduction = styled.div`
@@ -100,10 +92,6 @@ export const TextTitle = styled.div`
     height: 40p;
     flex-direction: column;
     justify-content: center;
-
-    ${MessageView}:hover & {
-        color: white;
-    }
 `
 
 export const Input = styled.input`
@@ -155,16 +143,9 @@ export const MessageGeral = styled.textarea`
 export const TitleContact = styled.h2`
     margin-left: 2%;
     overflow-y: hidden;
-    
-    ${MessageView}:hover & {
-        color: white;
-    }
 `
 
 export const TitleContactMessage = styled.h2`
-    ${MessageView}:hover & {
-        color: white;
-    }
 `
 
 export const TitleContainer = styled.div`
