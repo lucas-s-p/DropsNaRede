@@ -33,7 +33,7 @@ export default function Contact() {
     const [send, setSend] = useState(false);
 
     const onClickButton = () => {
-        if (name && lastName  && email && number && message) {
+        if (name && lastName && email && number && message) {
             setSend(true);
             if (buttonRef.current) {
                 buttonRef.current.style.backgroundColor = "#000053";

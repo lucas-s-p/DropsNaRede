@@ -27,6 +27,7 @@ export const Curiosity = styled.div`
     width: 20vw;
     height: 20vw;
     border: 2px solid black;
+    cursor: pointer;
 
     @media (max-width: 550px) {
         width: 100vw;
