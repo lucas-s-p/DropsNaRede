@@ -34,21 +34,23 @@ export default function Nav() {
     return (
         <NavContainer>
             <ContainerDesktop>
-                <NavImageDrops onClick={() => redirect("/")} src={imageDrops}></NavImageDrops>
+                <ModalButton onClick={() => toggleDrawer()}>
+                    <ModalButtonImage src={imageOpenDrawer}/>
+                </ModalButton>
+                <DrawerMobile isDrawerOpen={isDrawerOpen} toggleDrawer={toggleDrawer} navigateTo={navigateTo} redirect={redirect}/>
                 <NavPages>
                     <PageDrops onClick={() => redirect("/")}>Na Rede</PageDrops>
                     <PageDrops onClick={() => redirect("/nml")}>Mundo da Lua</PageDrops>
                     <PageDrops onClick={() => redirect("/coronadrops")}>Corona Drops</PageDrops>
                     <PageDrops onClick={() => redirect("/schools")}>Nas Escolas</PageDrops>
-                    <PageDrops onClick={() => redirect("/activities")}>Atividades</PageDrops>
                     <PageDrops onClick={() => redirect("/curiosities")}>Curiosidades</PageDrops>
                 </NavPages>
             </ContainerDesktop>
             <ContainerMobile>
-                <DrawerMobile isDrawerOpen={isDrawerOpen} toggleDrawer={toggleDrawer} navigateTo={navigateTo} redirect={redirect}/>
                 <ModalButton onClick={() => toggleDrawer()}>
                     <ModalButtonImage src={imageOpenDrawer}/>
                 </ModalButton>
+                <DrawerMobile isDrawerOpen={isDrawerOpen} toggleDrawer={toggleDrawer} navigateTo={navigateTo} redirect={redirect}/>
                 <NavImageDrops onClick={() => redirect("/")} src={imageDrops}></NavImageDrops>
             </ContainerMobile>
         </NavContainer>

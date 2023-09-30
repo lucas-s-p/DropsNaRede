@@ -13,7 +13,7 @@ export const Container = styled.div`
     align-items: center;
     
     @media(min-width: 0px) and (max-width: 1150px) {
-        height: 1100px;
+        height: 800px;
     }
 `
 
@@ -22,12 +22,16 @@ export const TitleGroup = styled.text`
     font-size: 2rem;
     color: white;
     text-align: center;
+
+    @media(min-width: 0px) and (max-width: 599px) {
+        font-size: 1.6rem;
+    }
 `
 
 export const GroupContainer = styled.div`
     width: 94%;
     height: 80%;
-    margin-top: 80px;
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -41,6 +45,10 @@ export const GroupContainer = styled.div`
 
     @media (min-width: 1090px) {
         justify-content: flex-start;
+    }
+
+    @media(min-width: 0px) and (max-width: 449px) {
+        width: 100%;
     }
 `
 
@@ -70,8 +78,8 @@ export const CardGroup = styled.div`
     }
 
     @media(min-width: 0px) and (max-width: 449px) {
-        width: 90%;
-        height: 400px;
+        width: 46vw;
+        height: 66vw;
     }
 `
 

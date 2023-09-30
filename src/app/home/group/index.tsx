@@ -32,7 +32,7 @@ const Grupo: React.FC = () => {
 
     return (
         <Container>
-            <TitleGroup>Conheça os participantes do DROPS na Rede</TitleGroup>
+            <TitleGroup>Participantes do DROPS</TitleGroup>
             <GroupContainer>
             {group.map((participant, index) => (
                 <CardGroup

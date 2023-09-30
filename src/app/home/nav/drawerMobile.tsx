@@ -6,7 +6,9 @@ import {
     ButtonNavigation, 
     ContainerDrawer, 
     ImageButtonClose, 
-    TextButtonDrawer 
+    TextButtonDrawer, 
+    DropsMenu,
+    Division
 } from "./navStyleMobile";
 import buttonCloseImage from "../../assets/buttonDrawer.png";
 
@@ -17,6 +19,7 @@ export default function DrawerMobile(props: any) {
             <DrawerContent>
                 <ContainerDrawer>
                     <ButtonContainer>
+                        <DropsMenu>Menús</DropsMenu>
                         <ButtonClose onClick={props.toggleDrawer}>
                             <ImageButtonClose src={buttonCloseImage}/>
                         </ButtonClose>                        
@@ -32,7 +35,7 @@ export default function DrawerMobile(props: any) {
                         </ButtonNavigation>
                     </ButtonContainer>
                     <ButtonContainer>
-                        <ButtonNavigation onClick={() => props.navigateTo("/coronadrops")}>
+                        <ButtonNavigation onClick={() => props.redirect("/coronadrops")}>
                             <TextButtonDrawer>Corona Drops</TextButtonDrawer>
                         </ButtonNavigation>
                     </ButtonContainer>
@@ -42,8 +45,27 @@ export default function DrawerMobile(props: any) {
                         </ButtonNavigation>
                     </ButtonContainer>
                     <ButtonContainer>
-                        <ButtonNavigation onClick={() => props.redirect("/activities")}>
-                            <TextButtonDrawer>Atividades</TextButtonDrawer>
+                        <ButtonNavigation onClick={() => props.redirect("/curiosities")}>
+                            <TextButtonDrawer>Curiosidades</TextButtonDrawer>
+                        </ButtonNavigation>
+                    </ButtonContainer>
+                    <Division/>
+                    <ButtonContainer>
+                        <DropsMenu>Conheça</DropsMenu>  
+                    </ButtonContainer>
+                    <ButtonContainer>
+                        <ButtonNavigation onClick={() => props.redirect("/bingotelescope")}>
+                            <TextButtonDrawer>Bingo</TextButtonDrawer>
+                        </ButtonNavigation>
+                    </ButtonContainer>
+                    <ButtonContainer>
+                        <ButtonNavigation onClick={() => props.redirect("/NASAEyes")}>
+                            <TextButtonDrawer>Nasa Eyes</TextButtonDrawer>
+                        </ButtonNavigation>
+                    </ButtonContainer>
+                    <ButtonContainer>
+                        <ButtonNavigation onClick={() => props.redirect("/SkyMaps")}>
+                            <TextButtonDrawer>Sky Maps</TextButtonDrawer>
                         </ButtonNavigation>
                     </ButtonContainer>
                 </ContainerDrawer>

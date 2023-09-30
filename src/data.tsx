@@ -7,6 +7,9 @@ import ProjectNML from "./app/project/nml";
 import ProjectCoronaDrops from "./app/project/coronadrops";
 import Element from "./app/element";
 import Curiosities from "./app/curiosities/index";
+import NASAEyes from "./app/project/nasaeyes";
+import Bingo from "./app/project/bingo";
+import SkyMaps from "./app/project/skymaps";
 
 const data = [
     {
@@ -35,6 +38,21 @@ const data = [
     {
         path: "curiosities",
         element: <Curiosities/>
+    },
+
+    {
+        path: "NASAEyes",
+        element: <NASAEyes/>
+    },
+
+    {
+        path: "bingotelescope",
+        element: <Bingo/>
+    },
+
+    {
+        path: "SkyMaps",
+        element: <SkyMaps/>
     }
 ];
 

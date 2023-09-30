@@ -51,10 +51,11 @@ export const NavPages = styled.div`
 `
 
 export const NavImageDrops = styled.img`
-    width: 70px;
-    height: 100%;
+    width: 40px;
+    height: 40px;
     object-fit: contain;
     cursor: pointer;
+    left: 0;
 `
 
 export const ContainerDesktop = styled.div`

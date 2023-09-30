@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { Container, NavProject, Project, ProjectBox, ProjectImage, TextProject } from "./projectStyle";
+import { Container, NavProject, Project, ProjectBox, ProjectBoxMobile, ProjectImage, TextProject } from "./projectStyle";
 import { ourProjects } from "./data";
 
 export default class Projects extends Component {
@@ -21,6 +21,14 @@ export default class Projects extends Component {
                     </Project>
                     )}
                 </ProjectBox>
+                <ProjectBoxMobile>
+                    {ourProjects.slice(0,2).map(project => 
+                    <Project onClick={() =>this.navigateTo(project.link)}>
+                        <NavProject>{project.projectName}</NavProject>
+                        <ProjectImage src={project.image}></ProjectImage>
+                    </Project>
+                    )}
+                </ProjectBoxMobile>
             </Container>
         )
     }

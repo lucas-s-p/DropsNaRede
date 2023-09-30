@@ -42,6 +42,7 @@ export const ButtonClose = styled.button`
     position: absolute;
     right: 10px;
     border: none;
+    cursor: pointer;
     background-color: white;
 `
 
@@ -51,29 +52,36 @@ export const ImageButtonClose = styled.img`
 `
 
 export const ButtonNavigation = styled.button`
-    width: 80%;
-    height: 40px;
-    border: none;
+  width: 80%;
+  height: 40px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid #3498db; /* Cor da borda */
+  background-color: #3498db; /* Cor de fundo */
+  color: #fff; /* Cor do texto */
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
 
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+  &:hover {
+    background-color: #2980b9; /* Cor de fundo ao passar o mouse */
+  }
+`;
 
-    flex-direction: column;
-    border: 2px solid black;
-    background-color: #fff;
-    border-radius: 8px;
-`
-
-export const TextButtonDrawer = styled.text`
-    font-size: 1.2rem;
-`
+export const TextButtonDrawer = styled.span`
+  font-size: 1.2rem;
+  /* Pode adicionar mais estilos de texto, como cor e tamanho de fonte, aqui */
+`;
 
 export const ModalButton = styled.button`
     width: 50px;
     height: 50px;
     border: 0px;
     display: flex;
+    cursor: pointer;
     justify-content: center;
     align-items: center;
     background-color: white;
@@ -85,4 +93,17 @@ export const ModalButtonImage = styled.img`
     border: 0px;
     object-fit: contain;
     background-color: white;
+    cursor: pointer;
+
+    &: hover {
+        opacity: 0.5;
+    }
+`
+
+export const DropsMenu = styled.text`
+    font-size: 1.2rem;
+`
+
+export const Division = styled.div`
+    margin-top: 20px;
 `

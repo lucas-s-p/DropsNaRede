@@ -22,7 +22,7 @@ export default function Element() {
     
     return (
         <Container>
-            {`Página não encontrada!\n\nRetornado a página inicial do\nDROPS na Rede em ${v} segundos.`}
+            {`Página não encontrada!\n\nRetornando a página inicial do\nDROPS na Rede em ${v} segundos.`}
         </Container>
     )
 }
