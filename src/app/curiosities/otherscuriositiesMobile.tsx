@@ -9,9 +9,9 @@ export default function OthersCuriosities() {
     return (
             <ContainerGeral>
                 {data.slice(0,data.length).map(({image, about, title, link}) =>
-                    <Container>
+                    <Container onClick={() => open(link)}>
                         <BackgroundImage image={image}></BackgroundImage>
-                        <Text onClick={() => open(link)}>{title}</Text>
+                        <Text>{title}</Text>
                         <Text2>{about}</Text2>
                     </Container>
                 )}
