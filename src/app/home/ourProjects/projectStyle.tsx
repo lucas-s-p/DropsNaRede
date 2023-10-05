@@ -7,10 +7,10 @@ export const Container = styled.div`
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    background-color: #50246c;
 
     @media (min-width: 0px) and (max-width: 599px) {
         height: 270px;
-        background-color: blue;
         padding: 20px 0px 20px 0px;
     }
 `
@@ -112,8 +112,8 @@ export const Project = styled.div`
 export const ProjectImage = styled.img`
     width: 100%;
     height: calc(100% - 20px);
-    background-color: white;
-    object-fit: cover;
+    background-color: #070722;
+    object-fit: contain;
 `
 
 export const TextProject = styled.text`

@@ -19,7 +19,7 @@ export default function DrawerMobile(props: any) {
             <DrawerContent>
                 <ContainerDrawer>
                     <ButtonContainer>
-                        <DropsMenu>Menús</DropsMenu>
+                        <DropsMenu>Menu</DropsMenu>
                         <ButtonClose onClick={props.toggleDrawer}>
                             <ImageButtonClose src={buttonCloseImage}/>
                         </ButtonClose>                        

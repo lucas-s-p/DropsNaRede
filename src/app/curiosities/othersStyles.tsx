@@ -21,6 +21,10 @@ export const Container = styled.div`
         padding: 0px 0px 0px 0px;
     }
 
+    @media (max-width: 1000px) {
+        display: none;
+    }
+
 `
 
 export const Curiosity = styled.div`

@@ -35,7 +35,7 @@ export const PostContainer = styled.button<PostContainerProps>`
     width: 200px;
     height: 400px;
     border: 0px;
-    transform: skew(-7deg);
+    transform: skew(0deg);
     position: relative;
 
     background-image: url(${props => props.image});
@@ -43,7 +43,7 @@ export const PostContainer = styled.button<PostContainerProps>`
     background-size: cover;
 
     &:hover {
-        animation: ${widthPostAnimation} 0.5s ease forwards;
+        animation: ${widthPostAnimation} 0.8s ease forwards;
     }
 
     &:not(:hover) {

@@ -1,6 +1,7 @@
 import CuriositiesDesataque from "./cusiosities";
 import { Container, CuriositiesTextDestaque, Destaques } from "./indexStyle";
 import OthersCuriosities from "./otherscuriosities";
+import OthersCuriositiesMobile from "./otherscuriositiesMobile";
 
 export default function Curiosities() {
 
@@ -12,6 +13,7 @@ export default function Curiosities() {
             </Destaques>
             <CuriositiesTextDestaque>Outras Curiosidades</CuriositiesTextDestaque>
             <OthersCuriosities></OthersCuriosities>
+            <OthersCuriositiesMobile></OthersCuriositiesMobile>
         </Container>
     )
 }
