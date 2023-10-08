@@ -19,6 +19,9 @@ import {
     TextTitle
 } from "./contactStyles";
 import contactImage from "../../assets/contact-img.svg";
+import { firestore } from "../../firebase";
+import { addDoc, collection } from "firebase/firestore";
+import { validarDuvida } from "./validacao";
 
 export default function Contact() {
     const buttonRef = useRef<HTMLButtonElement>(null);
@@ -32,14 +35,29 @@ export default function Contact() {
 
     const [send, setSend] = useState(false);
 
-    const onClickButton = () => {
-        if (name && lastName && email && number && message) {
-            setSend(true);
-            if (buttonRef.current) {
-                buttonRef.current.style.backgroundColor = "#000053";
+    const onClickButton = async() => {
+        if (validarDuvida(name, lastName, email, number, message)) {
+            try {
+                const docRef = await addDoc(collection(firestore, "duvidas"), {
+                    primeironome: name,
+                    ultimonome: lastName,
+                    email: email,
+                    telefone: number,
+                    mensagem: message
+                });
+                console.log('Mensagem enviada com sucesso!');
+                setSend(true);
+                if (buttonRef.current) {
+                    buttonRef.current.style.backgroundColor = "#000053";
+                }
+                if (textButtonRef.current) {
+                    textButtonRef.current.style.color = "white";
+                }
+                setSend(true);
+                setName(""); setLastName(""); setEmail(""); setNumber(""); setMessage("");
             }
-            if (textButtonRef.current) {
-                textButtonRef.current.style.color = "white";
+            catch(e) {
+                console.log('Ocorreu um erro ao enviar a mensagem!');
             }
         }
     };

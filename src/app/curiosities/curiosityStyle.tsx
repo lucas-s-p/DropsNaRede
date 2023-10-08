@@ -90,8 +90,9 @@ export const ButtonOpen = styled.button`
     align-items: center;
     color: white;
     font-weight: bold;
-    transform: skew(7deg);
+    transform: skew(0deg);
     border: 0px;
+    cursor: pointer;
 
     &:hover {
         background-color: #078a2a;

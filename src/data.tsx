@@ -13,44 +13,53 @@ import SkyMaps from "./app/project/skymaps";
 
 const data = [
     {
+        name: "Home",
         path: "/",
         element: <Home/>,
         errorElement: <Element/>
     },
 
     {
+        name: "Atividades",
         path: "activities",
         element: <Activities/>
     },
 
     {
+        name: "Drops nas escolas",
         path: "schools",
         element: <Schools/>
     },
     {
+        name: "DROPS no Mundo da Lua",
         path: "nml",
         element: <ProjectNML/>
     },
     {
+        name: "CoronaDrops",
         path: "coronadrops",
         element: <ProjectCoronaDrops/>
     },
     {
+        name: "Curiosidades",
         path: "curiosities",
         element: <Curiosities/>
     },
 
     {
+        name: "Olhos da Nasa",
         path: "NASAEyes",
         element: <NASAEyes/>
     },
 
     {
+        name: "Bingo",
         path: "bingotelescope",
         element: <Bingo/>
     },
 
     {
+        name: "Google Sky Maps",
         path: "SkyMaps",
         element: <SkyMaps/>
     }

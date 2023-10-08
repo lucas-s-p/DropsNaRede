@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import CuriositiesDesataque from "./cusiosities";
 import { Container, CuriositiesTextDestaque, Destaques } from "./indexStyle";
 import OthersCuriosities from "./otherscuriosities";
@@ -7,6 +8,11 @@ export default function Curiosities() {
 
     return (
         <Container>
+            <Helmet>
+                <title>Drops na Rede | Curiosidades</title>
+                <meta name="Drops na Rede | Curiosidades" content="Veja uma lista com conteúdos fantásticos sobre o mundo da Física."/>
+                <link rel="canonical" href="/curiosities"></link>
+            </Helmet>
             <Destaques>
                 <CuriositiesTextDestaque>Destaques do DROPS</CuriositiesTextDestaque>
                 <CuriositiesDesataque></CuriositiesDesataque>
