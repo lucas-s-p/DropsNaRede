@@ -27,12 +27,14 @@ const Grupo: React.FC = () => {
     };
   
     const navigateTo = (link: string) => {
-        window.open(link);
+        if (link != "") { 
+            window.open(link);
+        }
     }
 
     return (
         <Container>
-            <TitleGroup>Participantes do DROPS</TitleGroup>
+            <TitleGroup>PARTICIPANTES DO DROPS</TitleGroup>
             <GroupContainer>
             {group.map((participant, index) => (
                 <CardGroup

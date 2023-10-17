@@ -39,11 +39,11 @@ export default function Nav() {
                 </ModalButton>
                 <DrawerMobile isDrawerOpen={isDrawerOpen} toggleDrawer={toggleDrawer} navigateTo={navigateTo} redirect={redirect}/>
                 <NavPages>
-                    <PageDrops onClick={() => redirect("/")}>Na Rede</PageDrops>
-                    <PageDrops onClick={() => redirect("/nml")}>Mundo da Lua</PageDrops>
-                    <PageDrops onClick={() => redirect("/coronadrops")}>Corona Drops</PageDrops>
-                    <PageDrops onClick={() => redirect("/schools")}>Nas Escolas</PageDrops>
-                    <PageDrops onClick={() => redirect("/curiosities")}>Curiosidades</PageDrops>
+                    <PageDrops onClick={() => redirect("/")}>PÁGINA INICIAL</PageDrops>
+                    <PageDrops onClick={() => redirect("/nml")}>MUNDO DA LUA</PageDrops>
+                    <PageDrops onClick={() => redirect("/coronadrops")}>CORONA DROPS</PageDrops>
+                    <PageDrops onClick={() => redirect("/activities")}>ATIVIDADES</PageDrops>
+                    <PageDrops onClick={() => redirect("/curiosities")}>CURIOSIDADES</PageDrops>
                 </NavPages>
             </ContainerDesktop>
             <ContainerMobile>

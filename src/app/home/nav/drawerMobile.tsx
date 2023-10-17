@@ -26,27 +26,37 @@ export default function DrawerMobile(props: any) {
                     </ButtonContainer>
                     <ButtonContainer>
                         <ButtonNavigation onClick={() => props.redirect("/")}>
-                            <TextButtonDrawer>Drops na Rede</TextButtonDrawer>
+                            <TextButtonDrawer>PÁGINA INICIAL</TextButtonDrawer>
                         </ButtonNavigation>
                     </ButtonContainer>
                     <ButtonContainer>
                         <ButtonNavigation onClick={() => props.redirect("/nml")}>
-                            <TextButtonDrawer>Mundo da Lua</TextButtonDrawer>
+                            <TextButtonDrawer>MUNDO DA LUA</TextButtonDrawer>
                         </ButtonNavigation>
                     </ButtonContainer>
                     <ButtonContainer>
                         <ButtonNavigation onClick={() => props.redirect("/coronadrops")}>
-                            <TextButtonDrawer>Corona Drops</TextButtonDrawer>
+                            <TextButtonDrawer>CORONA DROPS</TextButtonDrawer>
+                        </ButtonNavigation>
+                    </ButtonContainer>
+                    <ButtonContainer>
+                        <ButtonNavigation onClick={() => props.redirect("/dropsoretorno")}>
+                            <TextButtonDrawer>DROPS - O RETORNO</TextButtonDrawer>
                         </ButtonNavigation>
                     </ButtonContainer>
                     <ButtonContainer>
                         <ButtonNavigation onClick={() => props.redirect("/schools")}>
-                            <TextButtonDrawer>Drops nas Escolas</TextButtonDrawer>
+                            <TextButtonDrawer>DROPS NAS ESCOLAS</TextButtonDrawer>
                         </ButtonNavigation>
                     </ButtonContainer>
                     <ButtonContainer>
                         <ButtonNavigation onClick={() => props.redirect("/curiosities")}>
-                            <TextButtonDrawer>Curiosidades</TextButtonDrawer>
+                            <TextButtonDrawer>CURIOSIDADES</TextButtonDrawer>
+                        </ButtonNavigation>
+                    </ButtonContainer>
+                    <ButtonContainer>
+                        <ButtonNavigation onClick={() => props.redirect("/activities")}>
+                            <TextButtonDrawer>ATIVIDADES</TextButtonDrawer>
                         </ButtonNavigation>
                     </ButtonContainer>
                     <Division/>
@@ -60,7 +70,7 @@ export default function DrawerMobile(props: any) {
                     </ButtonContainer>
                     <ButtonContainer>
                         <ButtonNavigation onClick={() => props.redirect("/NASAEyes")}>
-                            <TextButtonDrawer>Nasa Eyes</TextButtonDrawer>
+                            <TextButtonDrawer>Nasa`s Eyes</TextButtonDrawer>
                         </ButtonNavigation>
                     </ButtonContainer>
                     <ButtonContainer>

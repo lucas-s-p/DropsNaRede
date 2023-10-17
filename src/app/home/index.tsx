@@ -8,6 +8,8 @@ import Footer from "./Footer";
 import Group from "./group";
 import { Provider } from "./Provider";
 import { Helmet } from "react-helmet";
+import Activities from "./activities";
+import AboutDrops from "./about/AboutDrops";
 
 export default function Home() {
     const scrollRef = useRef(null);
@@ -21,7 +23,9 @@ export default function Home() {
                     <link rel="canonical" href="/"></link>
                 </Helmet>
                 <Header/>
+                <AboutDrops></AboutDrops>
                 <Projects/>
+                <Activities/>
                 <Group/>
                 <Contact/>
                 <Footer/>

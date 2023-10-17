@@ -52,7 +52,7 @@ export const ImageButtonClose = styled.img`
 `
 
 export const ButtonNavigation = styled.button`
-  width: 80%;
+  width: 100%;
   height: 40px;
   border: none;
   display: flex;

@@ -22,6 +22,7 @@ export const TitleGroup = styled.text`
     font-size: 2rem;
     color: white;
     text-align: center;
+    font-weight: 500;
 
     @media(min-width: 0px) and (max-width: 599px) {
         font-size: 1.6rem;

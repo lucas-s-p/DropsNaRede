@@ -12,7 +12,7 @@ export default class Projects extends Component {
 
         return (
             <Container>
-                <TextProject>Conheça nossos Projetos</TextProject>
+                <TextProject>CONHEÇA NOSSOS PROJETOS</TextProject>
                 <ProjectBox>
                     {ourProjects.map(project => 
                     <Project onClick={() =>this.navigateTo(project.link)}>

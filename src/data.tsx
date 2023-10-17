@@ -10,6 +10,7 @@ import Curiosities from "./app/curiosities/index";
 import NASAEyes from "./app/project/nasaeyes";
 import Bingo from "./app/project/bingo";
 import SkyMaps from "./app/project/skymaps";
+import DropsRetorno from "./app/project/dropsRetorno";
 
 const data = [
     {
@@ -62,6 +63,12 @@ const data = [
         name: "Google Sky Maps",
         path: "SkyMaps",
         element: <SkyMaps/>
+    },
+
+    {
+        name: "Drops - O Retorno",
+        path: "dropsoretorno",
+        element: <DropsRetorno/>
     }
 ];
 

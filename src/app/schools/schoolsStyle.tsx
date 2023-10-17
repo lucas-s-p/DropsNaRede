@@ -62,7 +62,7 @@ export const SchoolContainer = styled.div`
 
 export const Introduction = styled.div`
     width: 60%;
-    height: 60%;
+    min-height: 10%;
     background-color: white;
     border-radius: 10px;
     display: flex;
@@ -71,6 +71,7 @@ export const Introduction = styled.div`
     align-items: center;
     justify-content: flex-end;
     background-size: cover;
+    padding: 10px 10px 10px 10px;
 
     @media (min-width: 0px) and (max-width: 800px) {
         width: 90%;
@@ -118,7 +119,6 @@ export const IndroductionButton = styled.button`
     cursor: pointer;
     text-transform: uppercase;
     margin-top: 20px;
-    position: absolute;
 
     &:hover {
         color: blue;

@@ -66,7 +66,7 @@ export default function Contact() {
 
     return (
         <ContactContainer ref={contactRef}>
-            <TextTitle>Envie a sua dúvida</TextTitle>
+            <TextTitle>ENVIE A SUA DÚVIDA</TextTitle>
             <ContactBanner>
                 <ImageContainer>
                     <Image src={contactImage} />
